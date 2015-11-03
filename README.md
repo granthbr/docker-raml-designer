@@ -12,4 +12,10 @@ installed. It will be persisted once intitally created if the Docker cached file
 
 Eventually will be setup as a combined Docker cluster of API Designer and API Notebook started with docker-compose. 
 
+# Instructions on usage
+Clone the repo if you want the Dockerfile and customize the build. Or just run it. 
 
+* Build
+	* sudo docker build -t granthbr/raml-api-designer .
+* Run
+	* sudo docker run -p 8161:3000 -d --name ramlDesigner granthbr/raml-api-designer api-designer
